@@ -1,0 +1,438 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containor{
+    padding: 0 3rem;
+}
+a{
+    text-decoration: none;
+}
+#header{
+    position: fixed;
+    width: 100%;
+    z-index: 99999;
+}
+#header .all-header{
+    
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+    align-items: center;
+}
+.all-header .left{
+    width: 40%;
+}
+.all-header .left img{
+    width: 30%;
+}
+.all-header .orta{
+    width: 50%;
+}
+.all-header .right{
+    width: 10%;
+}
+#header .all-header .orta a{
+    font-family: Marcellus,sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-left: 20px; 
+    letter-spacing: 0.05em;
+    line-height: 23px;
+    position: relative;  
+    cursor: pointer;
+
+}
+#header .all-header .orta a::before{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    transition: .5s;
+}
+#header .all-header .orta a:first-child::before{
+    content: '';
+    position: absolute;
+    width: 100% !important;
+    height: 2px;
+    left: 0;
+    bottom: -6px;
+    background-color: #fff;
+    transition: .5s;
+}
+#header .all-header .orta a:hover::before{
+    width: 100%;
+}
+#header i{
+    font-size: 17px;
+    color: #fff;
+    margin-left: 20px;
+    transition: 0.5s;
+}
+#header i:hover{
+    color: rgb(136, 131, 131);
+}
+#header-phone{
+    display: none;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    padding: 15px 0;
+    z-index: 99999;
+    
+}
+#header-phone .all-phone{
+    text-align: center;
+    position: relative;
+}
+#header-phone .all-phone .img{
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+}
+#header-phone .all-phone img{
+    width: 50%;
+    height: 100%;
+    object-fit: cover; 
+}
+#header-phone i{
+    position: absolute;
+    font-size: 17px;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(72, 69, 69);
+    font-weight: 900;
+}
+#header-phone i:hover{
+    color: rgb(136, 131, 131);
+}
+#first{
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/home-1-slider-image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    padding: 0 0 7rem 0; 
+    position: relative; 
+}
+#first .first1{
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+    width: 8%;
+    text-align: center;
+    position: fixed;
+}
+.first1 i{
+    display: block;
+    color: red;
+    font-size: 25px;
+    padding: 5px 10px;
+    background-color: #fff;
+    margin-top: 10px;   
+    
+}
+.first1 svg{
+    display: block;
+    background-color: red;
+    padding: 5px 10px;
+    width: 100%;
+    height: 20px;   
+
+}
+#first .all-first{
+    display: flex;
+    justify-content: flex-end;
+}
+#first .all-first .first-orta{
+    z-index: 1;
+    width: 60%;
+    text-align: center;
+    padding-top: 7rem;
+}
+#first .all-first .first-orta h1{
+    font-size: 60px;
+    white-space: nowrap;
+    color: rgb(255, 255, 255);
+    font-family: Marcellus;
+    line-height: 78px;
+    letter-spacing: 5px;
+    font-weight: 400;
+}
+#first .all-first .first-orta img{
+    margin: 20px 0;
+}
+#first .all-first .first-orta p{
+    font-size: 17px;
+    line-height: 28px;
+    font-weight: 300; 
+    color: rgb(255, 255, 255);
+    font-family: "Open Sans";
+    margin-bottom: 60px;
+}
+#first .all-first .first-orta a{
+    border: 1px solid #fff;
+    padding: 23px 50px;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: .15em;
+    font-weight: 600;  
+    transition: .5s;
+}
+#first .all-first .first-orta a:hover{
+    background-color: #be9c79;;
+}
+#second{
+    padding: 5rem 0;
+}
+#second .all-second .top{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+#second .all-second .top h2{
+    font-size: 45px;
+    color: #262626;
+    font-family: Marcellus,sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#second .all-second .top img{
+    
+    margin-top: 13px;
+    margin-bottom: 22px;
+}
+#second .all-second .top h6{
+    font-size: 18px;
+    font-weight: 200;
+    color: #262626;
+    line-height: 1.55em;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-family: Open Sans;
+}
+#second .all-second .bottom{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+}
+#second .all-second .bottom .box{
+    width: 19%;
+    text-align: center;
+}
+#second .all-second .bottom .box h5{
+    font-size: 20px;
+    color: #262626;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+    transition: .5s;
+}
+#second .all-second .bottom .box a:hover h5{
+    color: #be9c79;
+}
+#second .all-second .bottom .box p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+}
+#third{
+    padding: 5rem 0;
+    background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#third .all-third .top{
+    text-align: center;
+    width: 45%;
+    margin: auto;
+}
+#third .all-third .top h2{
+    font-size: 45px;
+    color: #262626;
+    font-family: Marcellus,sans-serif;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+#third .all-third .top img{
+    margin-top: 13px;
+    margin-bottom: 22px;
+    width: 100%;
+}
+#third .all-third .bottom .box{
+    width: 32%;
+}
+#third .all-third .bottom .box img{
+    width: 100%;
+} 
+#third .all-third .top h6{
+    font-size: 18px;
+    font-weight: 200;
+    color: #262626;
+    line-height: 1.55em;
+    font-style: normal;
+    letter-spacing: 1px;
+    font-family: Open Sans;
+}
+#third .all-third .bottom{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+#third .all-third .bottom .box a:first-child{
+    font-size: 20px;
+    color: #262626;
+    display: inline-block;
+    font-weight: 500;
+    margin: 15px 0 10px 0;
+    transition: .5s;
+}
+#third .all-third .bottom .box a:first-child:hover{
+    color: #be9c79;
+}
+#third .all-third .bottom .box p{
+    font-size: 15px;
+    color: #656565;
+    line-height: 26px;
+    margin-bottom: 15px;
+}
+#third .all-third .bottom .box a:last-child{
+    position: relative;
+    margin-left: 25px;
+    font-size: 13px;
+    color: #262626; 
+    vertical-align: middle;
+    letter-spacing: .15em;
+    font-weight: 600;
+    width: 100%;
+    transition: .4s;
+}
+#third .all-third .bottom .box .bottom1 a:last-child::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    bottom:0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10%;
+    height: 2px;
+    display: inline-block;
+    background-color: #262626;
+    transition: .4s;
+}
+#third .all-third .bottom .box .bottom1 a:last-child:hover::before{
+    width: 17%;
+    background-color: #be9c79;
+}
+
+#third .all-third .bottom .box .bottom1 a:last-child:hover{
+    color: #be9c79;
+    width: 30%;
+    letter-spacing: 3px;
+}  
+#six{
+    padding: 4rem 0;
+}
+#six .all-six .bottom{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+#six .all-six .bottom .box{
+    width: 23%;
+    position: relative; 
+    transition: 0.9s; 
+    cursor: pointer;
+}
+#six .all-six .bottom .box img{
+    width: 100%;
+}
+#six .all-six .bottom .box a{
+    display: none; 
+    transition: .5s;
+} 
+
+#six .all-six .bottom .box:hover a{
+    display:block;
+    background-color:#BE9C78;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);  
+    left: 55px; 
+    padding: 15px 25px;
+    opacity: 1; 
+    z-index: 9999;
+    font-size: 17px;
+    color: #fff;
+    font-weight: 700;
+    font-family: sans-serif;
+}
+#six .all-six .bottom .box:hover img{
+    opacity: 0.5;
+}
+#six .all-six .bottom .box a:hover{
+    background-color: #262626;
+}  
+
+
+
+
+
+
+
+
+
+@media(max-width:576px){
+    #header{
+        display: none;
+    }
+    .containor{
+        padding: 0 1.5rem;
+    }
+    #header-phone{
+        display: block;
+    }
+    #first .all-first .first-orta{
+        width: 100%;
+        text-align: center;
+    }
+    #first .all-first .first-orta h1{
+        font-size: 28px;
+        color: #fff;
+    }
+    #second .all-second .top{
+        width: 100%;
+    }
+    #second .all-second .top h5{
+        font-size: 35px;
+        color: #262626;
+    }
+    #second .all-second .bottom{
+        flex-direction: column;
+    }
+    #second .all-second .bottom .box{
+        width: 100%;
+        margin-top: 50px;
+    }
+    #third .all-third .top{
+        width: 100%;
+    }
+    #third .all-third .top h5{
+        font-size: 35px;
+        color: #262626;
+    }
+    #third .all-third .bottom{
+        flex-direction: column;
+    }
+    #third .all-third .bottom .box{
+        width: 100%;
+        margin-top: 50px;
+    }
+
+}
